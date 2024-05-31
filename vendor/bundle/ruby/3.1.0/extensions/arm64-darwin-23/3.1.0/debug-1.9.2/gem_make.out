@@ -1,0 +1,20 @@
+current directory: /Users/akagawaeri/workspace/yell_app/vendor/bundle/ruby/3.1.0/gems/debug-1.9.2/ext/debug
+/Users/akagawaeri/.rbenv/versions/3.1.4/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/akagawaeri/workspace/yell_app/vendor/bundle/ruby/3.1.0/gems/debug-1.9.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20240531-40561-yqmkrg sitelibdir\=./.gem.20240531-40561-yqmkrg clean
+
+current directory: /Users/akagawaeri/workspace/yell_app/vendor/bundle/ruby/3.1.0/gems/debug-1.9.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20240531-40561-yqmkrg sitelibdir\=./.gem.20240531-40561-yqmkrg
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.bundle
+ld: warning: ignoring duplicate libraries: '-lruby.3.1'
+
+current directory: /Users/akagawaeri/workspace/yell_app/vendor/bundle/ruby/3.1.0/gems/debug-1.9.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20240531-40561-yqmkrg sitelibdir\=./.gem.20240531-40561-yqmkrg install
+/usr/bin/install -c -m 0755 debug.bundle ./.gem.20240531-40561-yqmkrg/debug
+
+current directory: /Users/akagawaeri/workspace/yell_app/vendor/bundle/ruby/3.1.0/gems/debug-1.9.2/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20240531-40561-yqmkrg sitelibdir\=./.gem.20240531-40561-yqmkrg clean

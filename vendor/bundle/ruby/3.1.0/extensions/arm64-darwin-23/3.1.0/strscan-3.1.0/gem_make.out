@@ -1,0 +1,21 @@
+current directory: /Users/akagawaeri/workspace/yell_app/vendor/bundle/ruby/3.1.0/gems/strscan-3.1.0/ext/strscan
+/Users/akagawaeri/.rbenv/versions/3.1.4/bin/ruby extconf.rb
+checking for onig_region_memsize() in ruby.h... yes
+checking for rb_reg_onig_match() in ruby.h... no
+creating Makefile
+
+current directory: /Users/akagawaeri/workspace/yell_app/vendor/bundle/ruby/3.1.0/gems/strscan-3.1.0/ext/strscan
+make DESTDIR\= sitearchdir\=./.gem.20240531-40561-2m77pl sitelibdir\=./.gem.20240531-40561-2m77pl clean
+
+current directory: /Users/akagawaeri/workspace/yell_app/vendor/bundle/ruby/3.1.0/gems/strscan-3.1.0/ext/strscan
+make DESTDIR\= sitearchdir\=./.gem.20240531-40561-2m77pl sitelibdir\=./.gem.20240531-40561-2m77pl
+compiling strscan.c
+linking shared-object strscan.bundle
+ld: warning: ignoring duplicate libraries: '-lruby.3.1'
+
+current directory: /Users/akagawaeri/workspace/yell_app/vendor/bundle/ruby/3.1.0/gems/strscan-3.1.0/ext/strscan
+make DESTDIR\= sitearchdir\=./.gem.20240531-40561-2m77pl sitelibdir\=./.gem.20240531-40561-2m77pl install
+/usr/bin/install -c -m 0755 strscan.bundle ./.gem.20240531-40561-2m77pl
+
+current directory: /Users/akagawaeri/workspace/yell_app/vendor/bundle/ruby/3.1.0/gems/strscan-3.1.0/ext/strscan
+make DESTDIR\= sitearchdir\=./.gem.20240531-40561-2m77pl sitelibdir\=./.gem.20240531-40561-2m77pl clean
