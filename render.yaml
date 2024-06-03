@@ -1,0 +1,22 @@
+databases:
+  - name: yell_app_DB
+    databaseName: yell_app_db
+    user: yell_app_db_user
+    region: singapore
+
+services:
+  - type: web
+    name: yell_app_DB
+    env: ruby
+    region: singapore
+    plan: free
+    buildCommand: "./bin/render-build.sh"
+    startCommand: "bundle exec puma -C config/puma.rb"
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: yell_app_DB
+          property: connectionString
+      - key: RAILS_MASTER_KEY
+        sync: false
+
