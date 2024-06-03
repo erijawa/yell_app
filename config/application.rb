@@ -23,5 +23,6 @@ module YellApp
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+    config.hosts << 'yell-app-vcr7.onrender.com'
   end
 end
