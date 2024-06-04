@@ -1,4 +1,4 @@
-class YellController < ApplicationController
+class YellsController < ApplicationController
   def top; end
 
   def show

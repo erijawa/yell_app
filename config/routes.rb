@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
-  root 'yell#top'
-  get 'yell/show', to: 'yell#show'
-  get 'yell/new', to: 'yell#new'
-  get 'yell/success', to: 'yell#success'
+  root 'yells#top'
+  get 'yells/show', to: 'yells#show'
+  get 'yells/new', to: 'yells#new'
+  get 'yells/success', to: 'yells#success'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
