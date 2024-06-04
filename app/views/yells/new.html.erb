@@ -1,2 +1,7 @@
 <h1>エールをおくる</h1>
-<p>Find me in app/views/yell/new.html.erb</p>
+<%= form_with model: @yell do |form| %>
+  <%= form.text_field :name %>
+  <%= form.text_field :body %>
+
+  <%= form.submit %>
+<% end %>
