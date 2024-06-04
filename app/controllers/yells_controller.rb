@@ -11,7 +11,7 @@ class YellsController < ApplicationController
   def create
     yell = Yell.new(yell_params)
     yell.save!
-    redirect_to yell_success_path
+    redirect_to "yells/success"
   end
 
   def success; end
