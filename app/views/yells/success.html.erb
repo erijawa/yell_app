@@ -1,4 +1,12 @@
-<h1>Yell#success</h1>
-<p>Find me in app/views/yell/success.html.erb</p>
+<div class="container">
+  <h2 class="page-title">エールが登録されました！</h2>
+  <div class="success-wrapper">
+    <p class="success-message">あなたのエールが誰かに届きますように！</p>
+  </div>
 
-<%= link_to "トップに戻る", root_path %>
+  <%= link_to root_path, class: "btn btn-custom btn-top" do%>
+    <span class="btn-custom-front">TOPにもどる</span>
+    <i class="fas fa-angle-right fa-position-right"></i>
+  <% end %>
+
+</div>

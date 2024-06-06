@@ -1,5 +1,12 @@
-<h1>Yell#show</h1>
-<p><%= @yell.name %>さんからのエールです</p>
-<p><%= @yell.body %></p>
+<div class="container">
+  <h2 class="page-title">エールが届きました！</h2>
+  <div class="message-wrapper">
+    <p class="message-from"><%= @yell.name %>さんからのエールです。</p>
+    <p class="message-body"><%= @yell.body %></p>
+  </div>
 
-<%= link_to "トップに戻る", root_path %>
+  <%= link_to root_path, class: "btn btn-custom btn-top" do%>
+    <span class="btn-custom-front">TOPにもどる</span>
+    <i class="fas fa-angle-right fa-position-right"></i>
+  <% end %>
+</div>

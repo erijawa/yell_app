@@ -1,7 +1,18 @@
-<h1>エールをおくる</h1>
-<%= form_with model: @yell do |form| %>
-  <%= form.text_field :name %>
-  <%= form.text_field :body %>
 
-  <%= form.submit %>
-<% end %>
+<div class="container">
+  <h2 class="page-title">エールをおくる</h2>
+  <div class="form">
+    <%= form_with model: @yell do |f| %>
+      <div class="cp_iptxt">
+        <%= f.label :name %>
+        <%= f.text_field :name %>
+      </div>
+      <div class="cp_iptxt">
+        <%= f.label :body %>
+        <%= f.text_area :body %>
+      </div>
+      <%= f.submit "登録する", class: "btn btn-custom" %>
+    <% end %>
+  </div>
+
+</div>
