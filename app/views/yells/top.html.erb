@@ -1,3 +1,17 @@
-<h1>がんばるあなたに、心からのエールを。</h1>
-<%= link_to "エールを受け取る", "yells/show" %>
-<%= link_to "エールを贈る", "yells/new" %>
+<div class="container">
+  <div class="title-wrapper">
+    <p>がんばるあなたへ、<br>心からのエールを。</p>
+  </div>
+
+  <div class="btn-wrapper">
+    <%= link_to "yells/show", class: "btn btn-custom btn-receive" do%>
+      <span class="btn-custom-front">エールをうけとる</span>
+      <i class="fas fa-angle-right fa-position-right"></i>
+    <% end %>
+
+    <%= link_to "yells/new", class: "btn btn-custom btn-send" do%>
+      <span class="btn-custom-front">エールをおくる</span>
+      <i class="fas fa-angle-right fa-position-right"></i>
+    <% end %>
+  </div>
+</div>
