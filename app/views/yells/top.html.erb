@@ -5,12 +5,12 @@
 
   <div class="btn-wrapper">
     <%= link_to "yells/show", class: "btn btn-custom btn-receive" do%>
-      <span class="btn-custom-front">エールをうけとる</span>
+      <span class="btn-custom-front"><%= icon('fa-regular', 'face-smile') %> エールをうけとる</span>
       <i class="fas fa-angle-right fa-position-right"></i>
     <% end %>
 
     <%= link_to "yells/new", class: "btn btn-custom btn-send" do%>
-      <span class="btn-custom-front">エールをおくる</span>
+      <span class="btn-custom-front"><%= icon('fa-solid', 'pen') %> エールをおくる</span>
       <i class="fas fa-angle-right fa-position-right"></i>
     <% end %>
   </div>

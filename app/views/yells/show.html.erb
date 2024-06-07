@@ -5,8 +5,8 @@
     <p class="message-body"><%= @yell.body %></p>
   </div>
 
-  <%= link_to root_path, class: "btn btn-custom btn-top" do%>
-    <span class="btn-custom-front">TOPにもどる</span>
+  <%= link_to root_path, class: "btn btn-custom" do%>
+    <span class="btn-custom-front btn-top"><%= icon('fa-solid', 'house') %> TOPにもどる</span>
     <i class="fas fa-angle-right fa-position-right"></i>
   <% end %>
 </div>

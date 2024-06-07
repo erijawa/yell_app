@@ -1,15 +1,15 @@
-
 <div class="container">
   <h2 class="page-title">エールをおくる</h2>
   <div class="form">
     <%= form_with model: @yell do |f| %>
+      <%= render 'shared/error_message', object: f.object %>
       <div class="cp_iptxt">
         <%= f.label :name %>
-        <%= f.text_field :name %>
+        <%= f.text_field :name, placeholder: "お名前" %>
       </div>
       <div class="cp_iptxt">
         <%= f.label :body %>
-        <%= f.text_area :body %>
+        <%= f.text_area :body, placeholder: "エールをお願いします！" %>
       </div>
       <%= f.submit "登録する", class: "btn btn-custom" %>
     <% end %>

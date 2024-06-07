@@ -11,9 +11,12 @@ class YellsController < ApplicationController
   end
 
   def create
-    yell = Yell.new(yell_params)
-    yell.save!
-    redirect_to "/yells/success"
+    @yell = Yell.new(yell_params)
+    if @yell.save
+      redirect_to "/yells/success"
+    else
+      render :new, status: :unprocessable_entity
+    end
   end
 
   def success; end
