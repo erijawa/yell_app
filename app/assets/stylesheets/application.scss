@@ -28,7 +28,6 @@ header {
 .container {
   width: 90%;
   margin: 0 auto;
-  text-align: center;
   height: 100vh;
 }
 .title-wrapper {
@@ -113,6 +112,9 @@ a.btn-custom:after {
 //   font-weight: 900;
 //   content: "\f304";
 // }
+.btn-send {
+  margin-left: 5rem;
+}
 
 .btn-custom-front {
   position: relative;
@@ -187,6 +189,9 @@ a.btn-custom:active:before {
   border-radius: 0.75rem;
   background-color: #fdf6f9;
 }
+textarea {
+  height:100px;
+}
 .cp_iptxt input[type='text']:focus,
 textarea:focus {
 	outline: none;
@@ -206,29 +211,51 @@ input[type='submit']:hover {
 }
 label {
   font-size: 15px;
-  
+
 }
 
 /* show */
 .message-wrapper {
   width: 60%;
-    margin: 40px auto;
-    padding: 40px;
-    border: solid;
+  margin: 40px auto;
+  text-align: center;
+}
+.message-content {
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  background: repeating-linear-gradient( -45deg, #eaf3f8, #eaf3f8 5px, #fff 5px, #fff 13px );
+}
+.message-content p {
+
 }
 .message-from {
   font-size: 20px;
 }
 .message-body {
-  font-size: 25px;
+  font-size: 20px;
 }
 .btn-top {
   padding: 1.5rem 3.5rem 1.5rem 1.5rem;
 }
 /* success */
 .success-wrapper {
-
+  text-align: center;
 }
 .success-message {
   font-size: 30px;
+}
+
+// エラーメッセージ
+.errors-list {
+  background-color: #F09FA1;
+  border-radius: 1.25rem;
+}
+.alert {
+  padding: 1rem;
+
+  border: 1px solid transparent;
+  color: black;
+  text-align: left;
+  font-size: 15px;
 }

@@ -1,12 +1,13 @@
 <div class="container">
   <h2 class="page-title">エールが届きました！</h2>
   <div class="message-wrapper">
-    <p class="message-from"><%= @yell.name %>さんからのエールです。</p>
-    <p class="message-body"><%= @yell.body %></p>
+    <div class="message-content">
+      <p class="message-from"><%= @yell.name %>さんからのエールです。</p>
+      <p class="message-body"><%= @yell.body %></p>
+    </div>
+    <%= link_to root_path, class: "btn btn-custom" do%>
+      <span class="btn-custom-front btn-top"><%= icon('fa-solid', 'house') %> TOPにもどる</span>
+      <i class="fas fa-angle-right fa-position-right"></i>
+    <% end %>
   </div>
-
-  <%= link_to root_path, class: "btn btn-custom" do%>
-    <span class="btn-custom-front btn-top"><%= icon('fa-solid', 'house') %> TOPにもどる</span>
-    <i class="fas fa-angle-right fa-position-right"></i>
-  <% end %>
 </div>
