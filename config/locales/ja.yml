@@ -1,0 +1,11 @@
+ja:
+  activerecord:
+    attributes:
+      yell:
+        name: "お名前(ニックネーム)"
+        body: "エールの内容"
+    errors:
+      messages:
+        invalid: "が正しくありません。"
+        blank: "を入力してください。"
+        too_long: "は255文字以内で入力してください。"

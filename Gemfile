@@ -38,6 +38,8 @@ gem "jbuilder"
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: %i[ windows jruby ]
 
+gem 'rails-i18n', '~> 7.0.0'
+
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
 
@@ -46,6 +48,7 @@ gem "bootsnap", require: false
 gem 'bootstrap-sass'
 gem "sassc-rails"
 
+gem 'font-awesome-sass'
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
