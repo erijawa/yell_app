@@ -1,8 +1,8 @@
 <div class="container">
   <h2 class="page-title">エールが登録されました！</h2>
   <div class="success-wrapper">
-    <p class="success-message">あなたのエールが誰かに届きますように！</p>
-  
+    <p class="success-message">あなたのエールが誰かに届きますように…</p>
+    <%= image_tag asset_path('thanks_man.png'), class: 'success-img', size: '100x200'%>
 
     <%= link_to root_path, class: "btn btn-custom" do%>
       <span class="btn-custom-front btn-top"><%= icon('fa-solid', 'house') %> TOPにもどる</span>

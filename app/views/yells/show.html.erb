@@ -2,9 +2,10 @@
   <h2 class="page-title">エールが届きました！</h2>
   <div class="message-wrapper">
     <div class="message-content">
-      <p class="message-from"><%= @yell.name %>さんからのエールです。</p>
-      <p class="message-body"><%= @yell.body %></p>
+      <%= simple_format(@yell.name + "さんからのエールです。", class: "message-from") %>
+      <%= simple_format(@yell.body, class: "message-body") %>
     </div>
+    <%= image_tag asset_path('yell_man.png'), class: 'success-img', size: '150x170'%>
     <%= link_to root_path, class: "btn btn-custom" do%>
       <span class="btn-custom-front btn-top"><%= icon('fa-solid', 'house') %> TOPにもどる</span>
       <i class="fas fa-angle-right fa-position-right"></i>
